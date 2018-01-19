@@ -1,0 +1,36 @@
+{
+  "env": {
+    "production": {
+      "plugins": ["transform-react-constant-elements", "transform-react-remove-prop-types"]
+    }
+  },
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "last 2 versions",
+          "node": "6.10"
+        }
+      }
+    ],
+    "@babel/preset-stage-2",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "lodash",
+    "transform-function-bind",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "alg-components": "./src/client/components",
+          "alg-containers": "./src/client/containers",
+          "alg-assets": "./src/client/assets",
+          "alg-config": "./src/client/config.js"
+        }
+      }
+    ]
+  ]
+}

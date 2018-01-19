@@ -1,0 +1,16 @@
+.sidebar {
+  border-right: 1px solid #e6e6e6;
+  display: block;
+  float: left;
+  padding: 23px;
+  overflow: scroll;
+  height: calc(100% - 83px);
+  width: 210px;
+
+  h1 {
+    font: {
+      size: 14px;
+      weight: 600;
+    }
+  }
+}

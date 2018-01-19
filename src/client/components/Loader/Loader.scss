@@ -1,0 +1,24 @@
+@import "~alg-assets/styles/algolia.scss";
+
+.loader {
+  svg {
+    margin-right: 12px;
+    opacity: 0.5;
+
+    animation: {
+      name: full-rotation;
+      timing-function: linear;
+      duration: 0.7s;
+      iteration-count: infinite;
+    }
+  }
+
+  @keyframes full-rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

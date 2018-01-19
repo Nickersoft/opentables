@@ -1,0 +1,53 @@
+@import "~alg-assets/styles/algolia.scss";
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+.searchBar {
+  background: linear-gradient(135deg, $blue, $blue-dark);
+  height: 83px;
+  padding: 22px 25px;
+  width: 100%;
+
+
+  .icon {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    margin-top: -5px;
+    vertical-align: middle;
+  }
+
+  .search {
+    background: transparent;
+    border: none;
+    color: white;
+    display: inline-block;
+    outline: none;
+    padding: 10px 12px;
+    vertical-align: middle;
+    width: calc(100% - 42px - 19.5px);
+
+    font: {
+      family: $fontFamily;
+      size: 1.5em;
+    }
+
+    @include placeholder {
+      color: rgba(255, 255, 255, 0.75);
+      font-family: $fontFamily;
+    }
+  }
+}

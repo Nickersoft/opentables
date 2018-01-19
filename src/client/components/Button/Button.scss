@@ -1,0 +1,25 @@
+.button {
+  color: rgba(112, 112, 112, 0.6);
+  display: inline-block;
+  padding: 0.5em 3em;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+
+  border: {
+    width: 1px;
+    style: solid;
+    color: #e6e6e6;
+    radius: 4px;
+  }
+
+  font: {
+    size: 14px;
+    weight: 600;
+  }
+
+  &:hover {
+    color: rgba(112, 112, 112, 0.9);
+    border-color: #c5c5c5;
+    cursor: pointer;
+  }
+}

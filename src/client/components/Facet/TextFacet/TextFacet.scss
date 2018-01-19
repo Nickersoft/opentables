@@ -1,0 +1,71 @@
+@import "~alg-assets/styles/algolia.scss";
+
+.header {
+  font: {
+    size: 14px;
+    weight: 600;
+  }
+}
+
+.list {
+  color: #333;
+  font-size: 13px;
+  margin-top: 5px;
+  overflow: hidden;
+
+  .listItem {
+    border-radius: 3px;
+    cursor: pointer;
+    display: table;
+    margin: 3px 0;
+    padding: 3px 10px;
+    vertical-align: middle;
+    width: 100%;
+
+    .name {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .count {
+      color: #9a9a9a;
+      vertical-align: middle;
+      display: table-cell;
+      text-align: right;
+    }
+
+    &.active {
+      background: linear-gradient(135deg, $blue, $blue-dark);
+      color: white;
+
+      .count {
+        color: white;
+      }
+    }
+
+    &:not(.active):hover {
+      background: #eee;
+    }
+  }
+
+  .label {
+    border-radius: 3px;
+    color: #aaa;
+    font-weight: 500;
+    display: block;
+    padding: 3px 10px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      color: #777;
+    }
+
+    &:active {
+      color: #666;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "~alg-assets/styles/algolia.scss";
+
+.item {
+  cursor: pointer;
+  margin: 20px 0;
+
+  .image {
+    background-size: cover;
+    display: inline-block;
+    height: 80px;
+    vertical-align: top;
+    width: 80px;
+
+    border: {
+      width: 1px;
+      style: solid;
+      color: #979797;
+      radius: 4px;
+    }
+  }
+
+  .content {
+    display: inline-block;
+    padding: 0 17px;
+    width: calc(100% - 80px);
+    vertical-align: top;
+
+    h2 {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .info {
+      color: rgba(112, 112, 112, 0.6);
+      margin-top: 4px;
+    }
+  }
+
+  &:hover h2 {
+    color: $blue;
+  }
+}

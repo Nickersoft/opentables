@@ -1,0 +1,36 @@
+.rating {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 14px;
+  margin: 5px 0;
+
+  span {
+    color: #ffab66;
+    font-weight: 600;
+  }
+
+  .stars {
+    display: inline-block;
+    height: 15px;
+    margin: -4px 10px 0 5px;
+    position: relative;
+    width: 81px;
+    vertical-align: middle;
+
+    .star {
+      height: 15px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 81px;
+
+      background: {
+        image: url('alg-assets/images/stars.png');
+        size: 81px auto;
+      }
+
+      &.filled {
+        background-position: 0px 15px;
+      }
+    }
+  }
+}

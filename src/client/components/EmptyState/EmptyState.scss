@@ -1,0 +1,36 @@
+@import '~alg-assets/styles/algolia.scss';
+
+.container {
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-75%);
+  position: relative;
+  display: block;
+  width: 50%;
+  text-align: center;
+
+  .icon {
+    font-size: 5em;
+    color: #888;
+  }
+
+  .header {
+    color: #888;
+    margin: 0;
+
+    font: {
+      size: 3em;
+      weight: 600;
+    }
+  }
+
+  .body {
+    font-size: 1.25em;
+    color: #aaa;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
